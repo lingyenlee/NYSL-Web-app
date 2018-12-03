@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The NYSL Homepage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYSL Home - Northside Youth Soccer League</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/nysl_3.css">
+</head>
+
+<body>
+    <!-- START Navbar -->
+    <div class="wrapper">
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+
+            <div class="navbar-header">
+                <!--START login and account-->
+
+             
+                <!--END logo and account -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Game Schedule</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                      <!-- Button to open the modal login form -->
+                    <button onclick="document.getElementById('id01').style.display='block'" class="login-btn">Login</button>
+
+                    <!-- The Modal -->
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+                        <!-- Modal Content -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                                <img src="login_avatar.png" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit" class="login-btn">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END login modal-->
+                        <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="schedule.html">Game Schedule</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="registration.html"></a>Registration</li>
+                            <li><a href="rules.html"></a>Rules</li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        <!-- END navbar -->
+
+        <div id="pageheader">
+            <div class="row col-xs-12 no-gutter">
+                <h3>2018 Spring Standings</h3>
+            </div>
+            <div class="row back-button">
+                <span class="glyphicon glyphicon-arrow-left">&nbsp;</span><a href="index.html">Back to Home</a>
+            </div>
+            <div class="container-fluid">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Place</th>
+                                <th>Team</th>
+                                <th>W</th>
+                                <th>L</th>
+                                <th>D</th>
+                                <th>Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>King Kong</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>2</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>The Avengers</td>
+                                <td>4</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>United Strikers</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Atlantic FC</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Angry Bird FC</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Gladiator</td>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+     <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

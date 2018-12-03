@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The NYSL Homepage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About NYSL</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/nysl_3.css">
+</head>
+
+<body>
+    <!-- START Navbar -->
+    <div class="wrapper">
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">NYSL BRAND</a>
+            </div>
+            <!-- Collect the nav links and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="#">About</a></li>
+                    <li><a href="schedule.html">Game Schedule</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Button to open the modal login form -->
+                    <button onclick="document.getElementById('id01').style.display='block'" class="login-btn">Login</button>
+
+                    <!-- The Modal -->
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+                        <!-- Modal Content -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                                <img src="login_avatar.png" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit" class="login-btn">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END login modal-->
+                    <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="active" href="#">About</a></li>
+                            <li><a href="schedule.html">Game Schedule</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="registration.html"></a>Registration</li>
+                            <li><a href="rules.html"></a>Rules</li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <!--START page header-->
+        <div id="container">
+            <div id="pageheader">
+                <div class="row col-xs-12 no-gutter">
+                    <h3>About NYSL</h3>
+                </div>
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="active">About NYSL</li>
+                    </ol>
+                </div>
+            </div>
+            <!--END page header-->
+            <div id="bodycontent">
+                <h3>Mission</h3>
+                <p class="indent">To support young athletes living in Chicago's northside neighborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
+
+                <h3>Vision</h3>
+                <p class="indent">The Northside Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
+
+                <h3>General Information</h3>
+                <p class="indent">The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's northside neighborhoods an environment in which to learn and play soccer. To be a member of NYSL, you must be between the ages of 4 - 12 and reside in a Chicago northside neighborhood. NYSL is run by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
